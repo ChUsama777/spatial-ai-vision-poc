@@ -58,3 +58,57 @@ spatial-ai-vision-poc/
 ├── PointCloud_Processing/     # Open3D dimension extraction logic
 ├── sample_images/             # Test objects (Tissue box, Cards, etc.)
 └── README.md
+
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Prerequisites
+
+Ensure you have Python 3.10+ installed. A CUDA-enabled GPU is highly recommended for faster inference.
+
+### 2. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone [https://github.com/ChUsama777/spatial-ai-vision-poc.git](https://github.com/ChUsama777/spatial-ai-vision-poc.git)
+cd spatial-ai-vision-poc
+pip install torch torchvision torchaudio
+pip install opencv-python ultralytics open3d numpy
+
+```
+
+*(Note: For Depth-Anything-V2, ensure you download the respective `.pth` weights into the `checkpoints` directory).*
+
+### 3. Running the Pipeline
+
+**To run YOLO Benchmarks:**
+
+```bash
+python YOLO_Benchmarking/compare_models.py
+
+```
+
+**To generate a Depth Map:**
+
+```bash
+python Depth_Estimation/test_dept.py
+
+```
+
+---
+
+## 👤 Author
+
+**Usama Ashraf**
+
+*AI Engineer & Spatial Computing Enthusiast*
+
+[LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/ChUsama777) | [GitHub](https://github.com/ChUsama777)
+
+---
+
+*Note: This PoC was originally developed during a B2B Spatial AI R&D sprint to address hardware tolerance verification.*
